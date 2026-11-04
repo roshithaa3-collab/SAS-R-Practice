@@ -3,7 +3,7 @@
 My Journey to become a Statistical Programmer.
 
 ## Tools
-SAS OnDemand for Academics (SAS Studio), R Studio.
+SAS OnDemand for Academics (SAS Studio), SAS 9.4, R Studio.
 
 ## Files
 Day1_first_program.sas: PROC PRINT, PROC CONTENTS, DATA STEP, SET, MERGE, RETAIN, FIRST./LAST.
