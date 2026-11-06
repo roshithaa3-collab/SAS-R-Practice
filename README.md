@@ -14,6 +14,7 @@ Day5_Practice.sas: PROC CONTENTS (metadata, SHORT, VARNUM, OUT=, NOPRINT, _ALL_ 
 Day6_Practice.sas: PROC TRANSPOSE (long to wide, wide to long, BY, ID, VAR, PREFIX=, NAME=, DROP=_NAME_, RENAME=).
 Day7_Practice.sas: ARRAYS (numeric and character arrays, DIM(), DO loops, two arrays, counting with a loop).
 Day8_Practice.sas: PROC TABULATE (CLASS, VAR, TABLE, ALL totals, SUM, MEAN, N, F=COMMA8. format).
+Day9_Practice.sas: SAS FUNCTIONS (character: SCAN, UPCASE, LENGTH, SUBSTR, CATX, FIND, COMPRESS, TRANWRD, TRANSLATE, ANYDIGIT; numeric: ROUND, MOD, INT, FLOOR, CEIL).
 
 ## Progress Log
 - Day 1 (23 Oct 2026): PROC PRINT, PROC CONTENTS, FIRST Data Step with WHERE, LIBNAME, SET, OUTPUT, LENGTH, IF/ELSE, PROC FREQ, MERGE WITH IN=, RETAIN, FIRST./LAST.
@@ -24,9 +25,10 @@ Day8_Practice.sas: PROC TABULATE (CLASS, VAR, TABLE, ALL totals, SUM, MEAN, N, F
 - Day 6 (3 Nov 2026): PROC TRANSPOSE with BY, ID, VAR, PREFIX= and NAME=, long to wide and wide to long, transposing multiple variables and keeping _NAME_, default COL1 and renaming it, combining test name and visit with CATS() for hb1/wbc2 style columns, debugging syntax errors and the "variable not found" error from the log, PROC SORT before BY.
 - Day 7 (4 Nov 2026): ARRAYS with DO loops, DIM() to count variables, numeric and character arrays, replacing missing values and -1 with missing, using two arrays (old and new) to keep original data safe, counting values below 50 with a loop, PROPCASE() on a character array, LENGTH before INPUT to stop text being cut at 8 characters, IF without THEN acts as a row filter, lone semicolon after DATALINES, and . < x < 50 to skip missing values.
 - Day 8 (5 Nov 2026): PROC TABULATE with CLASS, VAR and TABLE, rows and columns with a comma, nesting with *, side by side with a space, grouping with ( ), totals with ALL, statistics SUM, MEAN and N, formatting with F=COMMA8., fixing a missing * bug, and combining Units SUM and Revenue MEAN inside each Region.
+- Day 9 (6 Nov 2026): SAS FUNCTIONS, character and numeric. SCAN with delimiters, UPCASE, LENGTH, SUBSTR (position and length, not end position), CATX with a separator, FIND returning a position or 0, COMPRESS, TRANWRD for words, TRANSLATE for single characters, ANYDIGIT, ROUND with a unit (like a ruler), MOD for remainders and even/odd checks, INT, FLOOR and CEIL, quotes for text values but no quotes for variable names, and storing a function result in a new variable.
 
 ## Next Goals
-- FUNCTIONS (SUM, MEAN, ROUND, SUBSTR, CATX) and DATES.
+- FUNCTIONS: statistical (SUM, MEAN, MIN, MAX, N, NMISS), DATES (TODAY, MDY, INTCK, INTNX), INPUT/PUT, LAG/DIF, COALESCE.
 - PROC REPORT, Macros, PROC SQL.
 - CDISC Basics (SDTM, ADaM).
 - Tables with PROC Report.
